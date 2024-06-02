@@ -1,0 +1,16 @@
+local mark = require("harpoon.mark")
+local ui = require("harpoon.ui")
+
+vim.keymap.set("n", "<C-a>", mark.add_file)
+vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
+vim.keymap.set("n", "<C-n>", ui.nav_next)
+
+vim.api.nvim_set_keymap('n', '<leader>1', '<cmd>lua require("harpoon.ui").nav_file(1)<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>2', '<cmd>lua require("harpoon.ui").nav_file(2)<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>3', '<cmd>lua require("harpoon.ui").nav_file(3)<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>4', '<cmd>lua require("harpoon.ui").nav_file(4)<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>5', '<cmd>lua require("harpoon.ui").nav_file(5)<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>6', '<cmd>lua require("harpoon.ui").nav_file(6)<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>7', '<cmd>lua require("harpoon.ui").nav_file(7)<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>8', '<cmd>lua require("harpoon.ui").nav_file(8)<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>9', '<cmd>lua require("harpoon.ui").nav_file(9)<CR>', {noremap = true, silent = true})
