@@ -55,15 +55,15 @@ vim.opt.scrolloff = 8
 -- Show white characters
 vim.opt.list = true
 vim.opt.listchars = {
-    tab = "> ",
+    tab = "| ",
     trail = "·",
     nbsp = "+",
-    -- eol = "↲",
 }
 
--- vim.cmd[[hi Normal guibg=NONE ctermbg=NONE]]
-
+-- Set Background to None for when you want some transparency
 vim.cmd [[
-  highlight SpecialKey ctermfg=grey guifg=grey
-  highlight NonText ctermfg=darkgrey guifg=darkgrey
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+  highlight Normal ctermbg=none
+  highlight NonText ctermbg=none
 ]]
