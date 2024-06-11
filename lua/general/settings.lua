@@ -66,6 +66,7 @@ vim.cmd [[
   highlight NonText guibg=none
   highlight Normal ctermbg=none
   highlight NonText ctermbg=none
+  highlight Whitespace ctermbg=none guifg=white
 ]]
 
 vim.cmd("highlight NormalNC guibg=NONE ctermbg=NONE")
