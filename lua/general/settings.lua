@@ -53,7 +53,7 @@ vim.opt.guicursor = ""
 vim.opt.scrolloff = 8
 
 -- Show white characters
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars = {
     tab = "| ",
     trail = "·",
@@ -70,3 +70,8 @@ vim.cmd [[
 ]]
 
 vim.cmd("highlight NormalNC guibg=NONE ctermbg=NONE")
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  command = [[%s/\s\+$//e]],
+})
