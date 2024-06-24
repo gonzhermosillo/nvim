@@ -29,7 +29,7 @@ vim.opt.completeopt = 'menuone,noselect'
 
 -- Clipboard
 -- Note: Make sure xclip (or similar) is installed
-vim.api.nvim_set_option("clipboard","unnamed")
+-- vim.api.nvim_set_option("clipboard","unnamed")
 
 -- Turn off Wrapping -- hate it
 vim.wo.wrap = false
@@ -53,12 +53,12 @@ vim.opt.guicursor = ""
 vim.opt.scrolloff = 8
 
 -- Show white characters
-vim.opt.list = false
-vim.opt.listchars = {
-    tab = "| ",
-    trail = "·",
-    nbsp = "+",
-}
+-- vim.opt.list = false
+-- vim.opt.listchars = {
+--     tab = "| ",
+--     trail = "·",
+--     nbsp = "+",
+-- }
 
 -- Set Background to None for when you want some transparency
 vim.cmd [[

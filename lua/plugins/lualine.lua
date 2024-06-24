@@ -3,8 +3,7 @@ return {
 	opts = {
 		options = {
 			icons_enabled = true,
-			theme = 'catppuccin',
-			position = 'top',
+			theme = 'codedark',
 		},
 	},
 }
